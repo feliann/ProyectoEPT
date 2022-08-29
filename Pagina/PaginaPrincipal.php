@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style2.css">
-  <title>Iniciar sesión</title>
+  <title>PaginaPrincipal</title>
 </head>
 <body>
   <section class="form-register">
@@ -18,8 +18,8 @@
 
 
  </header>
-
-    
+ <form action="./AlquilarCochera.php">
+ <input type="submit" value= "Alquilar Cochera" name="AlquilarCochera" id="alquilar" ">
 
   </section>
 

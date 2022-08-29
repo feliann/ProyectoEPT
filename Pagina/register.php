@@ -20,7 +20,7 @@
 </form>
 </div>
 
-    <a href="http://localhost/proyecto/iniciosesion.php">¿Ya tengo Cuenta?<a>
+    <a href="http://localhost/proyecto/PaginaPrincipal.php">¿Ya tengo Cuenta?<a>
   </section>
 
 </body>
