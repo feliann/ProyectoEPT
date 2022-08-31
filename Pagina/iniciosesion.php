@@ -10,11 +10,12 @@
 <body>
   <section class="form-register">
     <h4>Iniciar sesión</h4>
-    <form action="./PaginaPrincipal.php">
-    <input class="controls" type="text" name="Correo" id="correo" placeholder="Ingrese su correo">
-    <input class="controls" type="password" name="Contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
+    <form action="Login.php" method ="POST">
+    <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su Nombre">
+    <input class="controls" type="password" name="Contrasena" id="Contrasena" placeholder="Ingrese su Contraseña">
     <input type="submit" value= "Iniciar sesión" name="iniciarsesion" id="iniciarsesion" placeholder="Iniciar sesión">
-    
+    <a href="http://localhost/proyecto/register.php">Crear cuenta<a>
+
 </form>
 </div>
 

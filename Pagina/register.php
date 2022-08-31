@@ -10,17 +10,17 @@
 <body>
   <section class="form-register">
     <h4>Registrarse</h4>
-    <form action="./iniciosesion.php">
-    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-    <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
+    <form action="Login.php" method = "POST">
+    <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="Contrasena" id="Contrasena" placeholder="Ingrese su Contraseña">
     <input type="submit" value= "Registrar" name="registro" id="registro" placeholder="Registrar">
     
 </form>
 </div>
 
-    <a href="http://localhost/proyecto/PaginaPrincipal.php">¿Ya tengo Cuenta?<a>
+    <a href="http://localhost/proyecto/iniciosesion.php">¿Ya tengo Cuenta?<a>
   </section>
 
 </body>
