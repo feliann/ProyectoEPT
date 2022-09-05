@@ -25,7 +25,7 @@
  <input type="submit" value= "Buscar Estacionamiento" name="BuscarEstacionamiento" id="buscarestacionamiento" >
  </form>
 
- <form action="./BuscarEstacionamientoComercial.php">
+ <form action="ProyectoEPT/Mapa/ba.html">
  <h4> Buscar estacionamiento comercial </h4>
  <p>
  <input type="submit" value= "Estacionamiento Comercial" name="EstacionamientoComercial" id="estacionamientocomercial" >
