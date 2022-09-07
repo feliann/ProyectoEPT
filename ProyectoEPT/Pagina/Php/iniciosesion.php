@@ -14,7 +14,7 @@
     <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su Nombre">
     <input class="controls" type="password" name="Contrasena" id="Contrasena" placeholder="Ingrese su Contraseña">
     <input type="submit" value= "Iniciar sesión" name="iniciarsesion" id="iniciarsesion" placeholder="Iniciar sesión">
-    <a href="http://localhost/proyecto/register.php">Crear cuenta<a>
+    <a href="register.php">Crear cuenta<a>
 
 </form>
 </div>

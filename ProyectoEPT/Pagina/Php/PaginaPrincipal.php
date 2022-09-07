@@ -25,7 +25,7 @@
  <input type="submit" value= "Buscar Estacionamiento" name="BuscarEstacionamiento" id="buscarestacionamiento" >
  </form>
 
- <form action="ProyectoEPT/Mapa/ba.html">
+ <form action="./Mapa/ba.html">
  <h4> Buscar estacionamiento comercial </h4>
  <p>
  <input type="submit" value= "Estacionamiento Comercial" name="EstacionamientoComercial" id="estacionamientocomercial" >
@@ -47,7 +47,7 @@
 
  <p>
 
- <a href="http://localhost/proyecto/iniciosesion.php">Cerrar Sesion<a>
+ <a href="iniciosesion.php">Cerrar Sesion<a>
 
   </section>
 
