@@ -17,6 +17,8 @@
     <input class="controls" type="password" name="Contrasena" id="Contrasena" placeholder="Ingrese su Contraseña">
     <input type="submit" value= "Registrar" name="registro" id="registro" placeholder="Registrar">
     
+    
+    
 </form>
 </div>
 
