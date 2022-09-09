@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleviejo.css">
   <title>iniciosesion</title>
 </head>
 <body>
@@ -15,13 +15,8 @@
     <input class="controls" type="password" name="Contrasena" id="Contrasena" placeholder="Ingrese su Contraseña">
     <input type="submit" value= "Iniciar sesión" name="iniciarsesion" id="iniciarsesion" placeholder="Iniciar sesión">
     <a href="register.php">Crear cuenta<a>
-
 </form>
 </div>
-
-
-
 </section>
-
 </body>
 </html>
