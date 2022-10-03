@@ -20,16 +20,16 @@ L.tileLayer('https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i{z}!2i{x}!3i{y}!4
 
 // Configurar PopUp
 function popup(feature,layer){
-  if(feature.properties && feature.properties.BARRIO){
-      layer.bindPopup("<strong>Barrio: </strong>" + feature.properties.BARRIO + "<br/>");
+  if(feature.properties && feature.properties.nombre){
+      layer.bindPopup("<strong>Nombre: </strong>" + feature.properties.nombre + "<br/>"+"<strong>Pisos: </strong>" + feature.properties.pisos_16 + "<br/>");
      
   }
 }
 
 // Agregar capa en formato GeoJson
-L.geoJson(garage).addTo(map);
+L.geoJson(grage).addTo(map);
 
-var garage = L.geoJson(garage,{
+var grage = L.geoJson(grage,{
   onEachFeature: popup
 }).addTo(map);
 

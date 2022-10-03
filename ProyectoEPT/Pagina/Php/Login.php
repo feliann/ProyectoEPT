@@ -13,11 +13,11 @@ if(isset($_POST["iniciarsesion"]))
 
    if($nr==1)
    {
-       echo "<script> alert('Bienvenido: $nombre'); window.location= 'PaginaPrincipal.php' </script>";
+       echo "<script> alert('Bienvenido: $nombre'); window.location= 'PaginaPrincipal.html' </script>";
    }
    else
    {
-    echo "<script> alert('Usuario inexistente'); window.location= 'iniciosesion.php' </script>";
+    echo "<script> alert('Usuario inexistente'); window.location= 'iniciosesion.html' </script>";
    }
 }
 if(isset($_POST["registro"])) 
@@ -26,7 +26,7 @@ if(isset($_POST["registro"]))
 
 	if(mysqli_query($conn,$sqlgrabar))
 	{
-		echo "<script> alert('Usuario registrado con exito'); window.location='PaginaPrincipal.php' </script>";
+		echo "<script> alert('Usuario registrado con exito'); window.location='PaginaPrincipal.html' </script>";
 	}else 
 	{
 		echo "Error: ".$sqlgrabar."<br>".mysql_error($conn);

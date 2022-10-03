@@ -15,5 +15,6 @@ var garage =
 { "type": "Feature", "properties": { "SMP": "079-069-030A", "CALLE": "BAHIA BLANCA", "NUM": 1625, "TIPO1_16": "GA", "TIPO2_16": "GARAGE", "PISOS_16": 1, "NOMBRE": null, "BARRIO": "FLORESTA", "COMUNA": 10.0 }, "geometry": { "type": "Point", "coordinates": [ -58.491642730487861, -34.618753656157935 ] } },
 { "type": "Feature", "properties": { "SMP": "079-054-005A", "CALLE": "MAGARINOS CERVANTES, A.", "NUM": 3940, "TIPO1_16": "GA", "TIPO2_16": "GARAGE", "PISOS_16": 2, "NOMBRE": null, "BARRIO": "FLORESTA", "COMUNA": 10.0 }, "geometry": { "type": "Point", "coordinates": [ -58.490680926714823, -34.620784904328239 ] } },
 { "type": "Feature", "properties": { "SMP": "079-063-016", "CALLE": "BAHIA BLANCA", "NUM": 1051, "TIPO1_16": "GA", "TIPO2_16": "GARAGE", "PISOS_16": 2, "NOMBRE": "MARY - GRA", "BARRIO": "FLORESTA", "COMUNA": 10.0 }, "geometry": { "type": "Point", "coordinates": [ -58.485322272289579, -34.623788688856678 ] } },
+
 ]
 };
