@@ -21,18 +21,41 @@ L.tileLayer('https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i{z}!2i{x}!3i{y}!4
 // Configurar PopUp
 function popup(feature,layer){
   if(feature.properties && feature.properties.nombre){
-      layer.bindPopup("<strong>Nombre: </strong>" + feature.properties.nombre + "<br/>"+"<strong>Pisos: </strong>" + feature.properties.pisos_16 + "<br/>");
+      layer.bindPopup("<strong>Nombre: </strong>" + feature.properties.nombre + "<br/>"+"<strong>Pisos: </strong>" + feature.properties.pisos_16 + "<br/>"+"<strong>Precio: </strong>" + feature.properties.Precio + "<br/>");
      
   }
 }
 
 // Agregar capa en formato GeoJson
-L.geoJson(grage).addTo(map);
+L.geoJson(grages).addTo(map);
 
-var grage = L.geoJson(grage,{
+var grages = L.geoJson(grages,{
   onEachFeature: popup
 }).addTo(map);
 
-//Agregar Localizador
-L.control.locate().addTo(map);
+//Agregar Localizador del usuario con nombre de variable sim
+var lc=L.control.locate().addTo(map);   
+
+//On click event new marker
+map.on('dblclick', function (e) {
+  console.log(e)
+  var newMarker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+  L.Routing.control({
+    waypoints: [
+      L.latLng(lc._event.latlng.lat, lc._event.latlng.lng),
+      L.latLng(e.latlng.lat, e.latlng.lng)
+    ]
+  }).on('routesfound', function (e) {
+    var routes = e.routes;
+    console.log(routes);
+
+    e.routes[0].coordinates.forEach(function (coord, index) {
+      setTimeout(function () {
+        marker.setLatLng([coord.lat, coord.lng]);
+      }, 100 * index)
+    })
+
+  }).addTo(map);
+});
+
 
