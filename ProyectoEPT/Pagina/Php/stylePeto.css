@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -24,6 +23,8 @@ body {
     background: transparent;
     position: fixed;
     width: 100%;
+    background:#110d49;
+
     z-index: 100;
 }
 

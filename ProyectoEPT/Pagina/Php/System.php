@@ -9,6 +9,7 @@ $rows = mysqli_query($conn, "SELECT * FROM rentar");
     <td>Apellido</td>
     <td>Telefono</td>
     <td>Direccion</td>
+    <td>Alquilar</td>
   </tr>
   <?php $i = 1; ?>
   <?php foreach($rows as $row) : ?>
@@ -18,6 +19,7 @@ $rows = mysqli_query($conn, "SELECT * FROM rentar");
       <td><?php echo $row["Apellido"]; ?></td>
       <td><?php echo $row["Telefono"]; ?></td>
       <td><?php echo $row["Direccion"]; ?></td>
+      <td><?php echo $row["Alquilar"]; ?></td>
     </tr>
   <?php endforeach; ?>
 </table>
