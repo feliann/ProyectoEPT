@@ -1,20 +1,18 @@
 body {
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
 
-#map {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+  #map {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 
-.leaflet-touch .leaflet-control-zoom {
-  display: none;
-}
+  .leaflet-touch .leaflet-control-zoom {
+    display: none;
+  }
 
-
-
-
+  
 

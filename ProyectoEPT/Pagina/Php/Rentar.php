@@ -1,5 +1,5 @@
 <?php
-include ("Conexion.php");
+include ("Conexion2.php");
 
 $celular = $_POST["Telefono"];
 $direc = $_POST["Direccion"];
@@ -9,7 +9,7 @@ $apellido = $_POST["Apellido"];
 
 if(isset($_POST["guardar"])) 
 {
-    $sqlgrabar = "INSERT INTO rentar (Telefono,Direccion,Nombre,Apellido) values ('$celular','$direc','$nombre','$apellido')";
+    $sqlgrabar = "INSERT INTO tb_data (Telefono,Direccion,Nombre,Apellido) values ('$celular','$direc','$nombre','$apellido')";
 
 	if(mysqli_query($conn,$sqlgrabar))
 	{
