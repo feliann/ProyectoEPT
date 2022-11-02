@@ -12,6 +12,19 @@ if(isset($_POST["delete"]) && isset($_POST["deleteId"])){
   foreach($_POST["deleteId"] as $deleteId){
     $delete = "DELETE FROM tb_data WHERE Telefono = $deleteId";
     mysqli_query($conn, $delete);
+    $resultado=mysqli_query($conn,$delete);
+    
+    if($resultado) {
+      echo "<script languaje='JavaScript'>
+      alert('La cochera ha sido alquilada, debes contactarte con el dueño de la cochera');
+      location.assign('PaginaPrincipal.html')
+      </script>";
+  }else{
+  echo "<script languaje='JavaScript'>
+  alert('Los datos NO se eliminarion de la BD');
+  location.assign('PaginaPrincipal.htmñ')
+  </script>";
+  }
   }
 }
 ?>
@@ -21,7 +34,17 @@ if(isset($_POST["delete"]) && isset($_POST["deleteId"])){
     <meta charset="utf-8">
     <title>Alquilar</title>
   </head>
+  <header>
+  <div class="titulo">
+  <h1>Alquilar Cochera</h1>   
+</div>
+
+<header>
+  <div class="subtitulo">
+    <h3>Estas son las cocheras disponibles:</h3>
+  </div>
   <body>
+    
     <table border = 1 cellpadding = 8 cellspacing = 0>
       <form class="" action="" method="post">
         <tr>
@@ -45,8 +68,19 @@ if(isset($_POST["delete"]) && isset($_POST["deleteId"])){
           <td><?php echo $row["Telefono"]; ?></td>
           <td><?php echo $row["Direccion"]; ?></td>
         </tr>
+      
         <?php endforeach; ?>
       </form>
     </table>
+    <div class="formulario">
+  <form action="http://localhost/proyecto/ProyectoEPT/Pagina/Php/PaginaPrincipal.html">
+    <input type="submit" value= "Volver a la pagina principal" name="VolverPrincipal" id="volver" >
+    </form>
+</div>
+<div class="formulario">
+  <form action="./AlquilarCochera.html">
+    <input type="submit" value= "Más datos" name="MasDatos" id="datos" >
+  </form>
+</div>
   </body>
 </html>
