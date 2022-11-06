@@ -21,7 +21,7 @@ L.tileLayer('https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i{z}!2i{x}!3i{y}!4
 // Configurar PopUp
 function popup(feature,layer){
   if(feature.properties && feature.properties.nombre){
-      layer.bindPopup("<strong>Nombre: </strong>" + feature.properties.nombre + "<br/>"+"<strong>Pisos: </strong>" + feature.properties.pisos_16 + "<br/>"+"<strong>Precio: </strong>" + feature.properties.Precio + "<br/>");
+      layer.bindPopup("<strong>Nombre: </strong>" + feature.properties.nombre + "<br/>"+"<strong>Pisos: </strong>" + feature.properties.pisos_16 + "<br/>"+"<strong>Precio: </strong>" + feature.properties.Precio + "<br/>"+"<strong>Telefono: </strong>" + feature.properties.smp + "<br/>");
      
   }
 }
@@ -29,9 +29,9 @@ function popup(feature,layer){
 // Agregar capa en formato GeoJson
 L.geoJson(grages).addTo(map);
 
-var grages = L.geoJson(grages,{
-  onEachFeature: popup
-}).addTo(map);
+ var grages = L.geoJson(grages,{
+  onEachFeature: popup 
+  }).addTo(map);
 
 //Agregar Localizador del usuario con nombre de variable sim
 var lc=L.control.locate().addTo(map);   
@@ -54,8 +54,8 @@ map.on('dblclick', function (e) {
         marker.setLatLng([coord.lat, coord.lng]);
       }, 100 * index)
     })
+    var marker = L.marker([0, 0]).addTo(map);
 
   }).addTo(map);
 });
-
 
