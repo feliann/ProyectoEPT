@@ -29,9 +29,9 @@ function popup(feature,layer){
 // Agregar capa en formato GeoJson
 L.geoJson(grages).addTo(map);
 
-var grages = L.geoJson(grages,{
-  onEachFeature: popup
-}).addTo(map);
+ var grages = L.geoJson(grages,{
+  onEachFeature: popup 
+  }).addTo(map);
 
 //Agregar Localizador del usuario con nombre de variable sim
 var lc=L.control.locate().addTo(map);   
@@ -54,8 +54,8 @@ map.on('dblclick', function (e) {
         marker.setLatLng([coord.lat, coord.lng]);
       }, 100 * index)
     })
+    var marker = L.marker([0, 0]).addTo(map);
 
   }).addTo(map);
 });
-
 
